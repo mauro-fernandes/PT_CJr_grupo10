@@ -61,13 +61,10 @@ body{background-color: #111E3E;}
     padding: 30px;
     text-align: center;
     position: relative;
-    width: 547px;
-    height: 723px;
-    top: 170px;
-    margin-top: -85px;
-    margin-bottom: 210px;
+    width: 28%;
+    height: 100%;
+    margin-top: 10%;
     margin-left: 50%;
-    margin-right: 50%;
     align-items: center;
     background: #222E50;
     border-radius: 10px;
