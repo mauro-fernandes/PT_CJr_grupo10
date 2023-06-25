@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
-body{background-color: rgb(12, 2, 72);}
+body{background-color: #111E3E;}
 .navbar{
     height: 3rem;
     width: 100%;
@@ -43,6 +43,7 @@ body{background-color: rgb(12, 2, 72);}
     margin: 0.5rem -0.5rem;
     font-family: 'Roboto', sans-serif;
 }
+
 
 .text-center {
     text-align: center;
@@ -166,4 +167,15 @@ a, p {
 
 .text-indent-20px {
     text-indent: 20px;
+}
+
+.wrapper{
+    margin-top: -80px;
+    margin-bottom: 0 auto;
+    width: 1000px;
+}
+
+.img-cjr{
+    width: 1000px;
+    height: 500px;
 }
