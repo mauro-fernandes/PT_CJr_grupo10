@@ -168,3 +168,14 @@ a, p {
 .text-indent-20px {
     text-indent: 20px;
 }
+
+.wrapper{
+    margin-top: -80px;
+    margin-bottom: 0 auto;
+    width: 1000px;
+}
+
+.img-cjr{
+    width: 1000px;
+    height: 500px;
+}
