@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
-body{background-color: #111E3E;}
+body{
+    background-image: url("CJR_background_logo.png");
+    background-repeat: no-repeat;
+    height: auto; /* must set a specified height */
+    background-position: left;
+    background-color: #111E3E;
+}
 .navbar{
     height: 3rem;
     width: 100%;
@@ -59,19 +65,20 @@ body{background-color: #111E3E;}
 }
 
 .input_box {
-    padding: 30px;
+    padding: 1%;
     text-align: center;
     position: relative;
     width: 411px;
     height: 630px;
-    top: 170px;
-    margin-top: -50px;
+    top: 70px;
+    margin-top: 0%;
     margin-bottom: 210px;
-    margin-left: 1350px;
+    margin-left: 740px;
     margin-right: 100px;
-    align-items: center;
+    align-items: right;
     background: #222E50;
     border-radius: 10px;
+    border: 1px #000000;
     /* Rectangle 10 */
 
 }
