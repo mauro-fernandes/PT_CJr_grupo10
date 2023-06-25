@@ -87,18 +87,17 @@ body{background-color: #111E3E;}
 
 .input_box {
     padding: 2rem;
-    padding-bottom: 4rem;
+    padding-bottom: 5rem;
     text-align: center;
     position: relative;
     width: 28%;
     height: 100%;
-    margin-top: 8%;
+    margin-top: 10%;
     margin-left: 50%;
     align-items: center;
     background: #222E50;
     border-radius: 10px;
     /* Rectangle 10 */
-
 }
 
 input {
@@ -177,6 +176,8 @@ a, p {
     margin-left: 20%;
 }
 .bg_img img {
-    width: 20%;
+    margin-top: 3%;
+    margin-left: 7%;
+    width: 50%;
     float: left;
 }
