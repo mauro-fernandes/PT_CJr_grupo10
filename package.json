@@ -1,0 +1,26 @@
+{
+  "name": "pt_cjr_grupo10",
+  "version": "1.0.0",
+  "description": "Processo Trainee 2023.1 CJr-UnB",
+  "main": "app.js",
+  "scripts": {
+    "test": "runTests_CJr"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauro-fernandes/PT_CJr_grupo10.git"
+  },
+  "author": "Grupo10",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mauro-fernandes/PT_CJr_grupo10/issues"
+  },
+  "homepage": "https://github.com/mauro-fernandes/PT_CJr_grupo10#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "prisma": "^4.16.1"
+  }
+}
