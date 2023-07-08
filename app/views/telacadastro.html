@@ -3,19 +3,29 @@
 
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel='stylesheet' href="text_input_box.css" />
-        <title>signup</title>
+        <link rel="stylesheet" type="text/css" href="/app/public/css/style.css">
+        <title>Cadastrar</title>
+
     </head>
 
     <body>
-        <div>
+        <div class="navbar">
+            <button class="button nav_logo" disabled type="button">
+                <img src="/app/public/img/logo.png" alt="logo">
+            </button>
+            <a class="entrar" href="teladelogin.html">Entrar</a>
+            <a class="criarconta" href="telacadastro.html">Criar Conta</a>
+        </div>
+
+
+        <div class="row">
             <form class="input_box">
                 <div class="col-auto">
                     <p>
-                        <a class="text-blue-link" href="#" target="_blank">    <!--put a url or route here-->
-                            <img src="./img/wildcard_avatar.png" alt="logo" width="180" height="135">
-                        foto</a>
+                        <a class="text-blue-link" href="#" target="_blank"> <!--put a url or route here-->
+                            <img src="/app/public/img/wildcard_avatar.png" alt="logo" width="180" height="135"></a>
                     </p>
                     <div class="col-auto">
                         <label for="inputname" class="visually-hidden"></label>
@@ -44,15 +54,16 @@
                     <div class="col-auto">
                         <label for="inputPassword2" class="visually-hidden"></label>
                         <input type="password" class="form-control" id="inputPassword2" placeholder="Senha">
-                    </div> 
+                    </div>
                     <p>
-                        <a class="text-blue-link" href="login.html">Possui conta? Acesse aqui</a>
+                        <a class="text-blue-link" href="teladelogin.html">Possui conta? Acesse aqui</a>
                     </p>
                     <div class="col-auto">
-                        <button type="submit" class="btn btn-primary mb-3">Cadastrar</button>
+                        <button type="submit" class="botao">Cadastrar</button>
                     </div>
             </form>
         </div>
+
     </body>
 
 </html>
