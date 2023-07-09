@@ -9,3 +9,36 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+
+
+model User {
+  id        Int       @id @default(autoincrement())
+  username  String    @unique
+  senha     String
+  gender    String
+  email     String    @unique
+  cargo     String
+  admin     Boolean   @default(false)
+  posts     Post[]   @relation("UserToPost")// 1:n relation between `User` and `Post` models
+  createdAt DateTime  @default(now())
+}
+
+model Post {
+  post_id   Int       @id @default(autoincrement())
+  user_id   Int       
+  content   String    @db.VarChar(250)
+  updatedAt DateTime  @updatedAt
+  createdAt DateTime  @default(now())
+  user      User      @relation("UserToPost", fields: [user_id], references: [id])
+ 
+}
+
+model Comment {
+  comment_id        Int       @id @default(autoincrement())
+  user_id           String    @db.VarChar(50)       
+  post_id           Int       
+  content_comments  String    @db.VarChar(100)
+  //updatedAt         DateTime  @updatedAt
+  //createdAt         DateTime  @default(now())
+}
