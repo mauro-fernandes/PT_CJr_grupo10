@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#open-modal{
+    background-color: transparent;
+    padding: 0.6rem 1.2rem;
+}
+#close-modal{
+    color: #FFF;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background-color: transparent;
+    border: none;    
+    width: 183px;
+    height: 70px;
+}
+#publish{
+    border: none;
+    width: 183px;
+    height: 70px;
+    color: #FFF;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #8BC34A;
+}
+#fade,
+#modal{
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+}
+#fade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 5;
+}
+
+#modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 961px;
+    height: 705px;
+    flex-shrink: 0;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: #111E3E;
+    max-width: 90%;
+    padding: 1rem;
+    border-radius: 32px; 
+}
+.modal-body{
+    width: 772px;
+    height: 447px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #222E50;
+}
+.modal-footer{
+    width: 772px ;
+    background-color: transparent;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.content-header{
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid white;
+    padding: 1.5rem;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 15px;
+
+}
+.content-header-button{
+    background-color: transparent;
+    border:none;
+}
+.content-body{
+    display:flex;
+
+}
+.postinput textarea{
+    background-color: transparent;
+    width: 772px;
+    height: 370px;
+    border: none;
+    color: white;
+    padding:35px;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: start;
+}
+
+#modal.hide,
+#fade.hide{
+    opacity:0;
+    pointer-events: none;
+}
