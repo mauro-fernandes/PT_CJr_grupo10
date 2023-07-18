@@ -1,0 +1,78 @@
+.feed{
+    width: 646px; 
+    height: 935px; 
+    position: relative; 
+    border-left: 0.50px #7E7E7E solid; 
+    border-right: 0.50px #7E7E7E solid;
+}
+
+.MdiOfficeBuilding{
+    width: 24px; 
+    height: 24px; 
+    left: 65px; 
+    top: 267px; 
+    position: absolute;
+}
+
+.Vector{
+    width: 16px; 
+    height: 18px; 
+    left: 5px; 
+    top: 3px; 
+    position: absolute; 
+    background: white;
+}
+
+.EvaEmailOutline{
+    width: 24px; 
+    height: 24px; 
+    left: 67px; 
+    top: 299px; 
+    position: absolute;
+}
+
+.EvaEmailOutline2{
+    width: 20px; 
+    height: 16px; 
+    left: 2px; 
+    top: 4px; 
+    position: absolute; 
+    background: white
+}
+
+.FeedAreaStroke{
+    width: 646px; 
+    height: 935px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.InteractionBar{
+    width: 523px; 
+    height: 20px; 
+    left: 100px; 
+    top: 606px; 
+    position: absolute; 
+    background: rgba(217, 217, 217, 0);
+}
+
+.PostBackground{
+    width: 646px; 
+    height: 151px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute; 
+    background: #222E50;
+}
+
+.InteractionBar2{
+    width: 523px; 
+    height: 20px; 
+    left: 100px; 
+    top: 816px; 
+    position: absolute; 
+    background: rgba(217, 217, 217, 0);
+}
+
