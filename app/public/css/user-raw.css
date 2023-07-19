@@ -76,3 +76,101 @@
     background: rgba(217, 217, 217, 0);
 }
 
+.PostOwner{
+    width: 150px; 
+    height: 180px; 
+    left: 67px; 
+    top: 75px; 
+    position: absolute;
+}
+
+.JoazinGamer{
+    width: 142px; 
+    height: 16px; 
+    left: 4px; 
+    top: 164px; 
+    position: absolute; 
+    color: white; 
+    font-size: 20px; 
+    font-family: Inter; 
+    font-weight: 700; 
+    word-wrap: break-word;
+}
+
+.ProfilePicture{
+    width: 150px; 
+    height: 150px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute;
+}
+
+.Frame1{
+    width: 150px; 
+    height: 150px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute;
+    background: white; 
+    border-radius: 100px;
+}
+
+.Image1{
+    width: 150px; 
+    height: 150px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute;
+    src: 'https://via.placeholder.com/150x150';
+}
+
+.JoazinGamer23CjrOrgBr{
+    width: 203px; 
+    height: 16px; 
+    left: 100px; 
+    top: 303px; 
+    position: absolute; 
+    color: white; 
+    font-size: 15px; 
+    font-family: Inter; 
+    font-weight: 400; 
+    word-wrap: break-word;
+}
+
+.Assessora{
+    width: 79px; 
+    height: 16px; 
+    left: 102px; 
+    top: 271px; 
+    position: absolute; 
+    color: white; 
+    font-size: 15px; 
+    font-family: Inter; 
+    font-weight: 400; 
+    word-wrap: break-word;
+}
+
+.BotaoDeLogin{
+    width: 154px; 
+    height: 48px; 
+    left: 455px; 
+    top: 163px; 
+    position: absolute; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Rectangle9{
+    width: 154px; 
+    height: 48px; 
+    left: 0px; top: 0px; 
+    position: absolute; 
+    background: #111E3E; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    border-radius: 16px; 
+    border-left: 0.50px black solid; 
+    border-top: 0.50px black solid; 
+    border-right: 0.50px black solid; 
+    border-bottom: 0.50px black solid;
+}
+
+
