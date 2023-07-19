@@ -173,4 +173,15 @@
     border-bottom: 0.50px black solid;
 }
 
+.Entrar{
+    left: 35.15px; 
+    top: 15px; 
+    position: absolute; 
+    color: white; 
+    font-size: 16px; 
+    font-family: Inter; 
+    font-weight: 700; 
+    word-wrap: break-word;
+}
+
 
