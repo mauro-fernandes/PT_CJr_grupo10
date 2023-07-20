@@ -184,4 +184,99 @@
     word-wrap: break-word;
 }
 
+.PublicaEs{
+    width: 94px; 
+    height: 16px; 
+    left: 8px; 
+    top: 360px; 
+    position: absolute; 
+    color: white; 
+    font-size: 15px; 
+    font-family: Inter; 
+    font-weight: 800; 
+    word-wrap: break-word;
+}
 
+.PostBackground{
+    width: 630px; 
+    height: 182px; 
+    left: 8px; 
+    top: 400px; 
+    position: absolute; 
+    background: #222E50; 
+    border-radius: 32px;
+}
+
+.Group1{
+    height: 106px; 
+    left: 91px; 
+    top: 462px; 
+    position: absolute;
+}
+
+.loremipsum{
+    width: 523px; 
+    height: 74px; 
+    left: 0px;
+    top: 0px; 
+    position: absolute; 
+    color: white; 
+    font-size: 15px;
+    font-family: Inter; 
+    font-weight: 500; 
+    word-wrap: break-word;
+}
+
+.PostOwner{
+    width: 242px; 
+    height: 48px; 
+    left: 32px; 
+    top: 414px; 
+    position: absolute;
+}
+
+.Text{
+    width: 183px; 
+    height: 16.22px; 
+    left: 59px; 
+    top: 14px; 
+    position: absolute;
+}
+
+.DeMar{
+    width: 71px; 
+    height: 16.22px; 
+    left: 112px; 
+    top: 0px; 
+    position: absolute; 
+    color: #71767B; 
+    font-size: 15px; 
+    font-family: Inter; 
+    font-weight: 500; 
+    word-wrap: break-word;
+}
+
+.Group4{
+    height: 106px; 
+    left: 91px; 
+    top: 661px; 
+    position: absolute;
+}
+
+.Sangue1{
+    width: 185px; 
+    height: 156px; 
+    left: 202px; 
+    top: 755px; 
+    position: absolute;
+}
+
+.Sangue2{
+    width: 455px; 
+    height: 231px; 
+    left: 95px; 
+    top: 741px; 
+    position: absolute; 
+    border-radius: 10px;
+    
+}
