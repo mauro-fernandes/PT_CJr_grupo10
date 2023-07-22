@@ -33,7 +33,13 @@ body{background-color: #111E3E;}
     margin: 0.5rem 1rem; 
     font-family: 'Roboto', sans-serif;
     color: #d9d9d9;
+    transition-duration: 0.4s;
 }
+
+.entrar:hover{
+    background-color: #151D33;
+}
+
 .criarconta{   
     background-color:transparent;
     border:transparent; 
@@ -42,4 +48,9 @@ body{background-color: #111E3E;}
     padding:0.4rem 1rem;
     margin: 0.5rem -0.5rem;
     font-family: 'Roboto', sans-serif;
+    transition-duration: 0.4s;
+}
+
+.criarconta:hover{
+    color: #3f0eaa;
 }
