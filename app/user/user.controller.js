@@ -5,7 +5,7 @@ import jwtGuard from "../auth/guards/jwt.guard.js";
 const userRouter = Router();
 const userService = new UserService();
 
-userRouter.post("/user", async (req, res) => {
+/*userRouter.post("/user", async (req, res) => {
     const { username, email, senha, gender, cargo } = req.body;
     try {
         const novoUsuario = await userService.create(username, email, senha, gender, cargo);
@@ -14,7 +14,7 @@ userRouter.post("/user", async (req, res) => {
     } catch (e) {
         res.status(400).json({ message: e.message });
     }
-    });
+    });*/
 
 userRouter.get("/user", async (req, res) => {
     const listaUsuarios = await userService.findAll();
