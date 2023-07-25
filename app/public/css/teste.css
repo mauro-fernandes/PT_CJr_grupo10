@@ -52,7 +52,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, img, button {
   .container {
     display: flex;
     align-items: center;
-    height: 60vh; /* Defina uma altura para o contêiner pai (por exemplo, 100vh para ocupar a altura total da página) */
+    height: 30vh; /* Defina uma altura para o contêiner pai (por exemplo, 100vh para ocupar a altura total da página) */
     justify-content: center; /* Isso também alinhará o elemento horizontalmente */
     position: relative;
   }
@@ -148,14 +148,13 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, img, button {
     margin-top: 0.625rem; /* 10px em rem */
   }
   
- .Sangue2 {
-  width: 28.4375rem; /* 455px / 16px = 28.4375rem */
-  height: 14.4375rem; /* 231px / 16px = 14.4375rem */
-  flex-shrink: 0;
-  border-radius: 10px;
-  margin: 0.625rem auto; /* 10px em rem na margem superior e inferior, e 'auto' na margem horizontal para centralizar */
-  padding: 2rem;
-}
+  .Sangue2 {
+    width: 28.4375rem; /* 455px / 16px = 28.4375rem */
+    height: 14.4375rem; /* 231px / 16px = 14.4375rem */
+    flex-shrink: 0;
+    border-radius: 10px;
+    padding: 2rem;
+  }
 
 .line1{
    width: 41.4375625rem; /* 647.001px / 16px = 40.4375625rem */
