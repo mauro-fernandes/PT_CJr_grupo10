@@ -28,7 +28,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, img, button {
   
   .Feed {
     width: 100%;
-    max-width: 43.75rem; /* 700px em rem */
+    max-width: 45.75rem; /* 700px em rem */
     margin: 1.25rem; /* 20px em rem */
     background-color: #222E50;
     border-radius: 0.625rem; /* 10px em rem */
@@ -64,7 +64,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, img, button {
 
   .PostBackground {
     background-color: #111E3E;
-    width: 42.375rem; /* 630px / 16px = 39.375rem */
+    width: 43rem; /* 630px / 16px = 39.375rem */
     height: 15.375rem; /* 182px / 16px = 11.375rem */
     border-radius: 10px;
     flex-shrink: 0;
@@ -106,6 +106,11 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, img, button {
     right:40rem;
     
   }
+
+  .JoazinGamer23CjrOrgBr{
+    font-family: Inter;
+    color: white;
+  }
   
   
   .Group1 {
@@ -117,7 +122,8 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, img, button {
     color: white;
     display: flex;
     justify-content: center;
-    position: absolute;
+    position: relative;
+    font-size: 1rem;
   }
   
   .Text {
@@ -156,6 +162,9 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, img, button {
    height: 0.0900rem; /* 1px / 16px = 0.0625rem */
    background: #7E7E7E;
    margin: auto;
+   position: absolute;
+   
+   right: auto;
 }
 
 
