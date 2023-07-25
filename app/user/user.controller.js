@@ -1,5 +1,6 @@
 import UserService from "./user.service.js";
 import { Router } from "express";
+import jwtGuard from "../auth/guards/jwt.guard.js";
 
 const userRouter = Router();
 const userService = new UserService();
@@ -22,7 +23,15 @@ userRouter.get("/user", async (req, res) => {
 });
 
 
-userRouter.delete("/user/:id", async (req, res) => {
+userRouter.delete("/user/:id", jwtGuard, async (req, res) => {
+    
+    const user = req.user
+    console.log("user: ", user);
+    if (user.id !== +req.params.id)
+        return res
+            .status(403)
+            .json({ message: "Você não tem autorização para deletar esse usuário!" });
+
     const { id } = req.params;
     console.log(`deletar usuário id: ${id}`);
     try {
