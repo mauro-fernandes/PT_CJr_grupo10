@@ -45,13 +45,24 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, img, button {
     width: 40.375rem; /* 646px em rem */
     height: 9.4375rem; /* 151px em rem */
     flex-shrink: 0;
-    fill: #222E50;
+    fill: #111E3E;
     border-radius: 10px;
   }
   
+  .container {
+    display: flex;
+    align-items: center;
+    height: 60vh; /* Defina uma altura para o contêiner pai (por exemplo, 100vh para ocupar a altura total da página) */
+    justify-content: center; /* Isso também alinhará o elemento horizontalmente */
+    position: relative;
+  }
+  
   .PostBackground {
-    background-color: #111E3E;
-    height: 5rem;
+    background-color: #0044ff;
+    width: 42.375rem; /* 630px / 16px = 39.375rem */
+    height: 15.375rem; /* 182px / 16px = 11.375rem */
+    border-radius: 10px;
+    flex-shrink: 0;
   }
   
   .ProfilePicture img {
@@ -86,13 +97,17 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, img, button {
     text-align: center;
   }
   
+  
   .Group1 {
     margin-top: 0.625rem; /* 10px em rem */
   }
   
   .loremipsum {
-    font-style: italic;
+    font-family: Inter;
     color: white;
+    display: flex;
+    justify-content: center;
+    position: absolute;
   }
   
   .Text {
@@ -350,7 +365,3 @@ a, p {
     text-indent: 20px;
 }
 
-.container {
-    margin-left: auto;
-    margin-right: auto;
-}
