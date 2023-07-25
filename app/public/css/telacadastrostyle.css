@@ -1,177 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
-
-
-/* vai sair (ser unificada)/ */
-
-body{
-    background-image: url("/app/public/img/CJR_background_logo.png");
-    background-repeat: no-repeat;
-    height: auto; /* must set a specified height */
-    background-position: left;
-    background-color: #111E3E;
+/* Reset de estilos padrão */
+html, body, div, h1, h2, h3, h4, h5, h6, p, img, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
 }
-.navbar{
-    height: 3rem;
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Definindo tamanho de fonte base em 16px (1rem = 16px) */
+html {
+  font-size: 16px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Feed {
+  width: 100%;
+  max-width: 43.75rem; /* 700px em rem */
+  margin: 1.25rem; /* 20px em rem */
+  background-color: #f5f5f5;
+  border-radius: 0.625rem; /* 10px em rem */
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+}
+
+.Feed > div {
+  padding: 0.625rem; /* 10px em rem */
+}
+
+.PostBackground {
+  background-color: #fff;
+  border-radius: 0.3125rem; /* 5px em rem */
+}
+
+.ProfilePicture img {
+  width: 3rem; /* 48px em rem */
+  height: 3rem; /* 48px em rem */
+  border-radius: 50%;
+}
+
+.JoazinGamer {
+  font-weight: bold;
+}
+
+.Assessora {
+  color: #666;
+}
+
+.BotaoDeLogin {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.625rem 1.25rem; /* 10px 20px em rem */
+  border-radius: 0.3125rem; /* 5px em rem */
+  cursor: pointer;
+  text-align: center;
+}
+
+.Group1 {
+  margin-top: 0.625rem; /* 10px em rem */
+}
+
+.loremipsum {
+  font-style: italic;
+  color: #777;
+}
+
+.Text {
+  position: relative;
+}
+
+.data {
+  display: inline-block;
+  color: #999;
+  margin-right: 0.3125rem; /* 5px em rem */
+}
+
+.Group4 {
+  margin-top: 0.625rem; /* 10px em rem */
+  background-color: #222e50;
+  color: #fff;
+  padding: 0.625rem; /* 10px em rem */
+  border-radius: 0.3125rem; /* 5px em rem */
+}
+
+.Sangue1 {
+  margin-top: 0.625rem; /* 10px em rem */
+}
+
+.Sangue2 {
+  width: 100%;
+  max-width: 28.4375rem; /* 455px em rem */
+  height: auto;
+  margin-top: 0.625rem; /* 10px em rem */
+}
+
+/* Estilos para telas menores (exemplo: dispositivos móveis) */
+@media screen and (max-width: 30rem) { /* 480px em rem */
+  .Feed {
     width: 100%;
-    position: absolute;
-    left:0%;
-    right:0%;
-    top:0%;
-    bottom:0%;
-    background-color: #8BC34A;
-  ;
-}
-.navbar img{
-    width:4.6rem;
-}   
-.nav_logo{
-    width:6rem;
-    height:2rem;
-    border-radius:1rem;
-    margin: 0.5rem 1rem;   
-    background-color:aliceblue;
-    border:transparent; 
-    float: left;
-}
-.entrar{   
-    background-color:#222E50;
-    border:transparent; 
-    float: right;
-    padding: 0.4rem 1rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    margin: 0.5rem 1rem; 
-    font-family: 'Roboto', sans-serif;
-    color: #d9d9d9;
-}
-.criarconta{   
-    background-color:transparent;
-    border:transparent; 
-    float: right;
-    text-decoration: none;
-    padding:0.4rem 1rem;
-    margin: 0.5rem -0.5rem;
-    font-family: 'Roboto', sans-serif;
-}
-
-
-.text-center {
-    text-align: center;
-    text-align-last: center;
-    text-anchor: middle;
-}
-
-.col-auto {
-    width: auto;
-    position: static;
-    padding: 0px;
-    margin: 2%;
-}
-
-.input_box {
-    padding: 1%;
-    text-align: center;
-    position: relative;
-    width: 411px;
-    height: 630px;
-    top: 70px;
-    margin-top: 0%;
-    margin-bottom: 210px;
-    margin-left: 740px;
-    margin-right: 100px;
-    align-items: right;
-    background: #222E50;
-    border-radius: 10px;
-    border: 1px #000000;
-    /* Rectangle 10 */
-
-}
-
-input {
-    border: 1px solid #00040e;
-    padding-left: 10%;
-    margin-left: auto;
-    width: 90%;
-    height: 3rem;
-    left: 3rem;
-    top: 20rem;
-    background: #D9D9D9;
-    border-radius: 1rem;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: 1rem;
-    color: #111E3E;
-    opacity: 0.7;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: start;
-    
-}
-
-::placeholder{
-    color: #111E3E;
-    opacity: 0.7;
-    text-align: start;
-    margin: auto ;
-
-}
-
-
-input:focus {
-    background: #8aa3e2;
-
-}
-
-input:hover {
-    background: #7e8bb8;
-}
-
-.btn {
-    /* Cadastrar/Entrar/ */
-    width: 283px;
-    height: 50px;
-    left: 916px;
-    top: 823px;
-
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    background: #D9D9D9;
-    border-radius: 15px;
-    color: #222E50;
-}
-
-
-.text-start{
-text-align: start;
-}
-
-.text-light {
-    color: #FFFFFF;
-}
-
-.text-blue-link {
-    color: #03050bba;
-    border-radius: 15px;
-}
-
-div{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border: #000000;
-}
-
-a, p {
-    font-weight: 650;
-    :hover {
-        color: #eceff6ba;
-    }
-}
-
-
-.text-indent-20px {
-    text-indent: 20px;
+    max-width: none;
+  }
 }
