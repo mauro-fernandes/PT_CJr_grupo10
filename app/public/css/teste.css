@@ -126,6 +126,11 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, img, button {
   padding: 2rem;
 }
 
+.line1{
+   width: 41.4375625rem; /* 647.001px / 16px = 40.4375625rem */
+   height: 0.0900rem; /* 1px / 16px = 0.0625rem */
+   background: #7E7E7E;
+}
 
 
 .CustomImage {
