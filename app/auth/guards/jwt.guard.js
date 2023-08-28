@@ -6,7 +6,7 @@ dotenv.config();
 export default function jwtGuard ( req, res, next ) {
     console.log("Guard executando!");
     const authHeader = req.headers['authorization'];
-
+    
     if (!authHeader)
         return res.status(401).json({message: 'Token não fornecido!'});
 
@@ -17,11 +17,11 @@ export default function jwtGuard ( req, res, next ) {
 
     try {
         const decoded = jwt.verify(token, process.env.JWT_SECRET);  
-        console.log("decoded: ", decoded);
+        console.log("signed user: ", decoded);
         req.user = decoded;
         next();
     }   
     catch (error) {
-        return res.status(401).json({message: 'Token inválido!'});
+        return res.status(401).json({error});
     }
 }

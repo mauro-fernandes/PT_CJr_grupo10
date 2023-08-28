@@ -1,5 +1,6 @@
 import {Router} from 'express';
 import AuthService from './auth.service.js';
+import jwtGuard from './guards/jwt.guard.js';
 
 const authRouter = Router();
 const authService = new AuthService();
@@ -8,7 +9,7 @@ authRouter.post("/sign-in", async (req, res) => {
     const {email, senha} = req.body;
     try {
         const token = await authService.signIn(email, senha);
-        res.json(token);
+        return res.json(token);
     } catch (error) {
         res.status(400).json({message: error.message});
     }

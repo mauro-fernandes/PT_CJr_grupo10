@@ -14,17 +14,17 @@ model User {
   id        Int       @id @default(autoincrement())
   username  String    @unique
   senha     String
-  gender    String?   
+  gender    String?
   email     String    @unique
-  cargo     String?   
+  cargo     String?
   admin     Boolean   @default(false)
-  posts     Post[]    @relation("UserToPost")  // 1:n relation between `User` and `Post` models
+  posts     Post[]    @relation("UserToPost") // 1:n relation between `User` and `Post` models
   comments  Comment[] @relation("UserToComment") // 1:n relation between `User` and `Comment` models
   createdAt DateTime  @default(now())
 }
 
 model Post {
-  post_id   Int       @id @default(autoincrement() )
+  post_id   Int       @id @default(autoincrement())
   user_id   Int
   title     String
   content   String
@@ -41,6 +41,6 @@ model Comment {
   content_comments String
   updatedAt        DateTime @updatedAt
   createdAt        DateTime @default(now())
-  user             User    @relation("UserToComment", fields: [user_id], references: [id], onDelete: Cascade)
+  user             User     @relation("UserToComment", fields: [user_id], references: [id], onDelete: Cascade)
   post             Post     @relation("PostToComment", fields: [post_id], references: [post_id], onDelete: Cascade)
 }

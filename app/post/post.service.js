@@ -22,24 +22,11 @@ class PostService {
     return posts;
   }
 
-  async delete(id) {
-    return await prisma.post
-      .delete({
-        where: {
-          id,
-        },
-      })
-      .catch((e) => {
-        if (e.code === "P2025") throw new Error("Post não encontrado!");
-        throw new Error(e.message);
-      });
-  }
-
   async update(id, body) {
     return await prisma.post
       .update({
         where: {
-          id,
+          post_id: id,
         },
         data: {
           ...body,
@@ -51,11 +38,11 @@ class PostService {
       });
   }
 
-  async findById(id) {
+  async delete(id) {
     return await prisma.post
-      .findUnique({
+      .delete({
         where: {
-          id,
+          post_id:id,
         },
       })
       .catch((e) => {
@@ -64,11 +51,11 @@ class PostService {
       });
   }
 
-  async findByUser(user_id) {
+  async findByPostId(post_id) {
     return await prisma.post
-      .findMany({
+      .findUnique({
         where: {
-          user_id,
+          post_id,
         },
       })
       .catch((e) => {
@@ -76,6 +63,39 @@ class PostService {
         throw new Error(e.message);
       });
   }
+
+  // trazer os últimos 10 posts de um usuário via id (include para comments)
+  async retrieveByUserId(user_id) {
+    return await prisma.post
+      .findMany({
+        where: {
+          user_id,
+        },
+        take: 10,
+        orderBy: { createdAt: "desc" },
+        include: { comments: true },
+      })
+      .catch((e) => {
+        if (e.code === "P2025") throw new Error("Nenhum Post encontrado!");
+        throw new Error(e.message);
+      });
+  }
+
+  /*
+  async user_idByPostId(post_id) {
+    return await prisma.post
+      .findUnique({
+        where: {
+          post_id,
+        },
+        include: {user_id: true},
+      })
+      .catch((e) => {
+        if (e.code === "P2025") throw new Error("Post não encontrado!");
+        throw new Error(e.message);
+      });
+  }
+  */
 }
 
 export default PostService;
